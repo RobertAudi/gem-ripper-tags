@@ -1,2 +1,8 @@
 #!/bin/bash
-rm gem-ripper-tags*.gem; gem build gem-ripper-tags.gemspec && gem uninstall gem-ripper-tags && gem install gem-ripper-tags-*.gem && gem ripper --debug
+
+rm gem-ripper-tags-optinal*.gem
+
+gem build gem-ripper-tags-optional.gemspec \
+  && gem uninstall gem-ripper-tags-optional \
+  && gem install gem-ripper-tags-optional-*.gem \
+  && gem ripper-tags --debug

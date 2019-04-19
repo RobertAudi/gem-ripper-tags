@@ -6,7 +6,7 @@ automatic generation of ctags for each installed gem. This small project is
 based on Tim's [gem-ctags][], but the main difference is it does *not* use
 [Exuberant Ctags][].
 
-Upstream site is at: https://github.com/lzap/gem-ripper-tags
+Upstream site is at: https://github.com/RobertAudi/gem-ripper-tags
 
 Usage
 -----
