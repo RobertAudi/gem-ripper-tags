@@ -4,7 +4,7 @@ require 'ripper-tags'
 class Gem::Commands::RipperTagsCommand < Gem::Command
   def initialize
     super 'ripper_tags', 'Generate ctags for gems with Ruby/Ripper parser'
-    
+
     add_option("--emacs", "Generate Emacs TAGS instead Vim tags") do |value, options|
       options[:emacs] = true
     end

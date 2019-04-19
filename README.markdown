@@ -30,6 +30,12 @@ gems below it will be indexed.
 You can use the gem even with 1.8 gemsets, but since Ruby 1.8 is not
 supported, it will (silently) not register the gem hook.
 
+### Skip tags generation
+
+Set the `SKIP_RIPPER_TAGS` environment variable to skip tags generation:
+
+    SKIP_RIPPER_TAGS=1 gem instal some_gem ...
+
 Motivation
 ----------
 
@@ -52,7 +58,7 @@ Regeneration
 ------------
 
 If you want to regenerate all tagfiles from scratch, use:
-    
+
     gem ripper_tags --reindex
 
 Emacs support
