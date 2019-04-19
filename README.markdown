@@ -6,14 +6,14 @@ automatic generation of ctags for each installed gem. This small project is
 based on Tim's [gem-ctags][], but the main difference is it does *not* use
 [Exuberant Ctags][].
 
-Upstream site is at: https://github.com/RobertAudi/gem-ripper-tags
+Upstream site is at: https://github.com/RobertAudi/gem-ripper-tags-optional
 
 Usage
 -----
 
 Install the thing (only Ruby 1.9+):
 
-    gem install gem-ripper-tags
+    gem install gem-ripper-tags-optional
 
 Then generate tags for all already installed gems:
 
@@ -21,7 +21,7 @@ Then generate tags for all already installed gems:
 
 Anytime you install a gem now, tags will be automatically created.
 
-    gem instal some_gem ...
+    gem install some_gem ...
 
 If you're using RVM, I recommend extending your global gemset by adding
 `gem-ripper-tags` to `~/.rvm/gemsets/global.gems`.  Put it at the top so the
@@ -34,7 +34,7 @@ supported, it will (silently) not register the gem hook.
 
 Set the `SKIP_RIPPER_TAGS` environment variable to skip tags generation:
 
-    SKIP_RIPPER_TAGS=1 gem instal some_gem ...
+    SKIP_RIPPER_TAGS=1 gem install some_gem ...
 
 Motivation
 ----------
@@ -99,7 +99,7 @@ Tim Pope doesn't like to get crazy. ;-)
 License
 -------
 
-Copyright (c) Tim Pope; Lukáš Zapletal. MIT License.
+Copyright (c) Tim Pope; Lukáš Zapletal; Robert Audi. MIT License.
 
 [Tim Pope]: http://tpo.pe/
 [Exuberant Ctags]: http://ctags.sourceforge.net/
